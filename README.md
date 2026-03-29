@@ -13,4 +13,4 @@ Redirected audio output to NVIDIA HDMI device.
 System stable, no more shutdowns.
 
 ## Full Analysis
-See: docs/audiorelay-case.md
+See: [Full analysis](docs/audiorelay-case.md)
