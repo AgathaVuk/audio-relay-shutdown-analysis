@@ -72,3 +72,11 @@ Computer shuts down abruptly 1–2 minutes after starting AudioRelay streaming.
 - Created the PulseAudio folder.
 1. `mkdir -p ~/.config/pulse` - Created the foulder.
 2. `echo "set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo" >> ~/.config/pulse/default.pa` - Add the command to inicialization arquive.
+
+---
+
+## Conclusion
+- The issue was not caused by CPU temperature, power supply, or PipeWire.
+- The root cause was likely related to the old Intel audio controller failing under load when used by AudioRelay.
+- Redirecting audio output to the NVIDIA HDMI audio device resolved the issue completely.
+- This suggests a hardware-level instability rather than a software misconfiguration.
